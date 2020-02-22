@@ -9,6 +9,12 @@
     color: white; 
     border-radius: 0 5px 5px 0; 
   }
+  #about{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   
   #mySidenav a:hover {
     left: 0; 
@@ -60,25 +66,218 @@
   .topnav .icon {
     display: none;
   }
+  div.image-profile img{
+    margin-left: 80px;
+    /* float: right; */
+    padding: 0px;
+    height: 330px;
+    width: 280px;
+    border-radius: 50%;
+    box-shadow: -3px -3px 4px 2px rgba(83,83,83,0.7),
+            3px 3px 4px 2px rgba(83,83,83,0.7);
+    /* background-color: gray; */
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+div.container div.row div.col-12{
+  padding: 2%;
+  text-align: center;
+}
+
+p.content {
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+div.content-header {
+  color: #fff;
+  font-size: x-large;
+}
+
+pre.qualification {
+  font-size: 15px;
+}
+
+div.image-set {
+  width: 100%;
+  height: 7%;
+  background-image: url(nature.jpeg);
+  background-repeat: no-repeat;
+}
+
+div.col-5 {
+  /* margin: 10px; */
+  padding: 25px;
+}
+/* div.left-portion {
+  padding-top: 0;
+} */
+
+h1.detail-1 {
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+}
+
+h2.detail-2 {
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+}
+
+/* p.details {
+  display: block;
+  padding-left: 5%;
+  padding-bottom: 7%;
+  font-weight: 700;
+  font-size: xx-large;
+  margin: 0; */
+  /* min-height: 25px; */
+  /* margin-block-start: 0; */
   
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
+/* } */
+
+div.image-profile img{
+  margin-left: 120px;
+  /* float: right; */
+  padding: 3px;
+  height: 330px;
+  width: 280px;
+  /* border-radius: 50%; */
+  box-shadow: -3px -3px 4px 2px rgba(83,83,83,0.7),
+          3px 3px 4px 2px rgba(83,83,83,0.7);
+  /* background-color: gray; */
+}
+
+/* p.connect div.connect-place-main {
+  font-size: 10px;
+} */
+
+div.box {
+      background-color: #fff;
+      margin: 60px 20px 0px 20px;
+      box-shadow: 0 0 0 2px rgba(0,0,0,0.15),
+          0 2px 3px 0 rgba(0,0,0,.1);
       float: right;
-      display: block;
-    }
-  }
+      padding: 10px;
+      border-radius: 5px;
+      width: 70%;
+}
+pre.qualification {
+  font-size: 15px;
+}
+div.table table.projects{
+  display: table;
+  text-align: center;
+  border-spacing: 2px;
+  border-collapse: collapse;
+  border: 2px solid black;
+  /* border-radius: 35px; */
+  margin-top: 19px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+div.table table.projects tr td.first-col {
+  width: 15%;
+  font-size: 20px;
+}
+
+div.table table.projects tr.child-even {
+  background-color: #f1f1f1
+}
+
+div.table table.projects tr.child-odd {
+  color: #f1f1f1;
+  background-color: #010101;
   
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+}
+
+div.table table.projects tr.main-tr {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f1f1f1;
+  background-color: #040042;
+}
+
+div.table  table.projects tr td {
+  font-size: 15px;
+  border: 2px solid #ddd;
+  text-align: left;
+  padding: 1%;
+  width: auto;
+}
+
+div.table table.address{
+  display: table;
+  text-align: center;
+  border-spacing: 2px;
+  border-collapse: collapse;
+  border: 2px solid black;
+  /* border-radius: 35px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+div.table  table.address tr td {
+  border: 2px solid black;
+  padding: 4%;
+  width: auto;
+}
+
+div.table  table.address tr td.ad-cell {
+  font-size: 18px;
+  width: 75%;
+}
+
+div.table  table.address tr td.disp-cell {
+  font-size: x-large;
+}
+
+div.table table.about-html tr.child-even {
+  background-color: #f1f1f1
+}
+
+div.table table.about-html tr.child-odd {
+  color: #f1f1f1;
+  background-color: #010101
+}
+
+div.table table.about-html tr.main-tr {
+  font-size: 19px;
+  color: #f1f1f1;
+  background-color: #040042;
+  font-weight: 600;
+}
+
+div.table  table.about-html tr td {
+  border: 2px solid #ddd;
+  text-align: left;
+  padding: 1%;
+  width: auto;
+}
