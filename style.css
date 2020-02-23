@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 #mySidenav a {
     position: absolute; 
     left: -115px;
@@ -237,7 +241,7 @@ div.table table.address{
   text-align: center;
   border-spacing: 2px;
   border-collapse: collapse;
-  border: 2px solid black;
+  border: 2px solid white;
   /* border-radius: 35px; */
   margin-top: 20px;
   margin-bottom: 20px;
@@ -245,17 +249,20 @@ div.table table.address{
 }
 
 div.table  table.address tr td {
-  border: 2px solid black;
+  color: #f1f1f1;
+  border: 2px solid white;
   padding: 4%;
   width: auto;
 }
 
 div.table  table.address tr td.ad-cell {
+  color: #f1f1f1;
   font-size: 18px;
   width: 75%;
 }
 
 div.table  table.address tr td.disp-cell {
+  color: #f1f1f1;
   font-size: x-large;
 }
 
@@ -280,4 +287,54 @@ div.table  table.about-html tr td {
   text-align: left;
   padding: 1%;
   width: auto;
+}
+
+div p.semester-II {
+  color: #f1f1f1;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+div.table table.courses{
+  display: table;
+  text-align: center;
+  border-spacing: 2px;
+  border-collapse: collapse;
+  border: 2px solid black;
+  /* border-radius: 35px; */
+  margin-top: 19px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+div.table table.courses tr.first-row th {
+  /* width: 15%; */
+  color: #f1f1f1;
+  font-size: 22px;
+}
+
+div.table table.courses tr.child-even {
+  background-color: #f7f5f5
+}
+
+div.table table.courses tr.child-odd {
+  color: #f1f1f1;
+  background-color: #010101
+}
+
+/* div.table table.projects tr.main-tr {
+  font-size: 20px;
+  font-weight: 600;
+} */
+
+div.table  table.courses tr th {
+  font-size: 15px;
+  border: 2px solid rgb(104, 104, 104);
+  text-align: left;
+  padding: 1%;
+  width: auto;
+}
+
+div.table  table.courses tr.lab-total-row th{
+  color: #000000;
 }
