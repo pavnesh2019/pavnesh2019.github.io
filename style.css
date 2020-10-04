@@ -28,7 +28,6 @@ body {
     top: 110px;
     background-color: rgb(122, 228, 255);
   }
-  
   #linkedIn {
     top: 170px;
     background-color: #2196F3;
@@ -42,6 +41,7 @@ body {
       height: 20px;
       width: 20px;
   }
+ 
   .topnav {
     overflow: hidden;
     background-color: #333;
@@ -55,11 +55,15 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: transform .2s;
   }
   
   .topnav a:hover {
     background-color: #ddd;
     color: black;
+    transform: scale(1.2);
+    text-decoration:underline;
+    text-decoration-color: red;
   }
   
   .topnav a.active {
@@ -328,4 +332,10 @@ div.table  table.courses tr th {
 
 div.table  table.courses tr.lab-total-row th{
   color: #000000;
+}
+#change{
+  color:red;
+  text-decoration:none;
+  font-size: 25px;
+  font-weight: bold;
 }
